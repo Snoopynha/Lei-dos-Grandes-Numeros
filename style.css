@@ -102,6 +102,34 @@ input:not([type="checkbox"]) {
     background: var(--gold-coin);
 }
 
+.nav-group {
+    margin-top: 10px;
+    text-align: center;
+    width: 100%;
+}
+
+.nav-group h3 {
+    color: #333;
+    font-size: 1rem;
+    margin-bottom: 8px;
+}
+
+.nav-group a {
+    display: inline-block;
+    background: var(--primary-blue);
+    color: white;
+    padding: 10px 12px;
+    border-radius: 6px;
+    text-decoration: none;
+    font-weight: bold;
+    transition: 0.2s;
+}
+
+.nav-group a:hover {
+    background: white;
+    color: var(--primary-blue);
+}
+
 /* Animação da Moeda */
 .coin-animation-area {
     height: 150px;

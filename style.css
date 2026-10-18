@@ -313,17 +313,21 @@ input[type="number"]:focus {
 
 .chart-container {
     width: 100%;
-    max-height: 480px;
-    flex: 1;
-    min-height: 0;
+    height: 100%;
+    min-height: 380px;
     background: var(--bg-card);
     border-radius: var(--radius-lg);
     padding: 16px 20px;
     box-shadow: var(--shadow-sm);
     border: 1px solid var(--border-color);
     position: relative;
-    display: flex;
-    flex-direction: column;
+    overflow: hidden;
+}
+
+.chart-container canvas {
+    width: 100% !important;
+    height: 100% !important;
+    display: block;
 }
 
 #containerJunto {
